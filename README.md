@@ -15,3 +15,5 @@ Esse programa é capaz de:
   O programa aceita vários tipos diferentes: txt, doc, docx, pdf, jpg e tif. Além disso, É simples adicionar novos tipos no futuro.
   
   O MSSQL é usado para o uso do banco de dados. Pela natureza desse sistema, em cada computador um banco diferente é criado, portanto é preciso atualizar a url da conexão no computador, que está localizada na classe "Ajustes".
+
+OBS: O projeto já possui todas as libs necessárias para funcionar, não vai ser preciso baixar as dependências(com o Maven, por exemplo) como é comum ao criar um projeto com Spring.
