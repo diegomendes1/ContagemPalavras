@@ -23,14 +23,18 @@ public class UtilPlanilhas {
 			
 			Sheet s = wb.createSheet();
 			Row r = s.createRow(0);
+			Cell cellTitulo = r.createCell(0);
+			cellTitulo.setCellValue("Contagem: Quantas Vezes Cada Palavra se Repete no Arquivo");
+			
+			r = s.createRow(1);
 			
 			Cell cellPalavra = r.createCell(0);
 			cellPalavra.setCellValue("Palavra");
 			
 			Cell cellOcorrencias = r.createCell(1);
-			cellOcorrencias.setCellValue("Nº Ocorrências");
+			cellOcorrencias.setCellValue("Quantidade");
 			
-			int i = 1;
+			int i = 2;
 			for(Map.Entry<String, Integer> entry : hashMap.entrySet()) {
 				r = s.createRow(i);
 				cellPalavra = r.createCell(0);

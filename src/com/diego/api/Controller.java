@@ -64,7 +64,7 @@ public class Controller {
 	@GetMapping("/busca")
 	public Object busca(@RequestHeader(required = false) String tipoArquivo,
 					  @RequestHeader(required = false) String appCaptura,
-					  @RequestHeader(required = false) @DateTimeFormat(pattern = "yyyy-MM-dd") Date data) {
+					  @RequestHeader(required = false) @DateTimeFormat(pattern = "dd-MM-yyyy") Date data) {
 		try {
 			return UtilBancoDados.buscarNoBD(tipoArquivo, appCaptura, data);
 		} catch (Exception e) {

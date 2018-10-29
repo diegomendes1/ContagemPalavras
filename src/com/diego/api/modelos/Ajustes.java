@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 //Armazena todos os ajustes e verifica se um novo processo pode ser executado
 @Service
 public class Ajustes {
+	//Caminho para o banco de dados
+	public static String caminho = "jdbc:sqlserver://DIEGO\\SQLEXPRESS:1433;";
+	
 	//Armazena todos os tipos que podem ser processados
 	private static ArrayList<String> tiposExistentes = new ArrayList<String>() {
 		private static final long serialVersionUID = 1L; { 

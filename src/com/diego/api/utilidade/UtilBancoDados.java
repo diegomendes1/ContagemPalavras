@@ -11,9 +11,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.diego.api.modelos.Ajustes;
+
 public class UtilBancoDados {
 	//Atualiza-se a url para o BD, afim de se conectar ao BD na maquina atual.
-	static String caminho = "jdbc:sqlserver://DIEGO\\SQLEXPRESS:1433;databaseName=DBContagem;integratedSecurity=True;";
+	static String caminho = Ajustes.caminho + "databaseName=DBContagem;integratedSecurity=True;";
 	static Connection connection;
 	static Statement st;
 	

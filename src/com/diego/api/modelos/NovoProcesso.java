@@ -3,6 +3,7 @@ package com.diego.api.modelos;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
+import java.util.regex.Pattern;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -71,10 +72,12 @@ public class NovoProcesso {
 		
 		while(st.hasMoreTokens()) {
 			String palavraAtual = st.nextToken();
-			if(hashMap.containsKey(palavraAtual)) {
-				hashMap.put(palavraAtual, hashMap.get(palavraAtual)+1);
-			}else {
-				hashMap.put(palavraAtual, 1);
+			if(Pattern.matches("[a-zA-Z]+", palavraAtual)) {
+				if(hashMap.containsKey(palavraAtual)) {
+					hashMap.put(palavraAtual, hashMap.get(palavraAtual)+1);
+				}else {
+					hashMap.put(palavraAtual, 1);
+				}
 			}
 		}
 		return hashMap;
