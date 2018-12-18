@@ -1,5 +1,7 @@
 # Contagem de Palavras
 
+Tempo em Desenvolvimento: 6 dias
+
 API REST criada com Spring responsável por ler arquivos de diferentes formatos e gerar relatórios sobre suas palavras e quantidades.
 
 Esse programa é capaz de:
