@@ -1,5 +1,6 @@
 # Contagem de Palavras
 
+Concluído em: 28 de Outubro de 2018
 Tempo em Desenvolvimento: 6 dias
 
 API REST criada com Spring responsável por ler arquivos de diferentes formatos e gerar relatórios sobre suas palavras e quantidades.
